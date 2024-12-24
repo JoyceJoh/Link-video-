@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Duara na Video</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        .circle {          
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+            overflow: hidden;
+        }
+
+        .circle video {
+            width: 300%;
+            height: 300%;
+            object-fit: cover;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">                
+        </video>
+    </div>
+</body>
+</html>
